@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ProTwo</title>
+  </head>
+  <body>
+    <h1>hello!!</h1>
+    <!-- {{insert_here}} -->
+    {% if enterhere %}
+        <table>
+          <th>first name</th>
+          <th>last name</th>
+          <th>email</th>
+
+          {% for entry in enterhere %}
+            <tr>
+              <td>{{entry.first_name}}</td>
+              <td>{{entry.last_name}}</td>
+              <td>{{entry.email}}</td>
+            </tr>
+          {% endfor %}
+        </table>
+    {% endif %}
+
+  </body>
+</html>
